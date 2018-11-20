@@ -1,32 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ToggleComponent } from './toggle.component';
 
-import { ToggleonComponent } from './toggleon.component';
-import { ToggleoffComponent } from './toggleoff.component';
-import { ToggleButtonComponent } from './toggle.button.component';
-import { SwitchComponent } from '../switch/switch.component';
-import { ToggleDirective } from './toggle.directive';
-import { ToggleProviderDirective } from './toggle.provider';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [
-    ToggleDirective,
-    ToggleProviderDirective,
-    ToggleonComponent,
-    ToggleoffComponent,
-    ToggleButtonComponent,
-    SwitchComponent
+    ToggleComponent,
+ 
   ],
   exports: [
-    ToggleDirective,
-    ToggleProviderDirective,
-    ToggleonComponent,
-    ToggleoffComponent,
-    ToggleButtonComponent,
-
+    ToggleComponent,
   ],
 
 })

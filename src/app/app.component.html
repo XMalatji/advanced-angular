@@ -1,13 +1,9 @@
-<div #toggleFirst="toggle" toggle (toggled)="showMessage($event)">
-  <toggle-button></toggle-button>
-  <toggle-on> Btn is on</toggle-on>
-  <toggle-off> is off</toggle-off>
-</div>
+<toggle>
+ <ng-template let-on="on" let-toggle="toggle">
+  <switch [on]="on" (click)="toggle()"></switch>
+  {{ on ? 'On' : 'Off'}}
+ </ng-template>
+</toggle>
 
-<div [toggleProvider]="toggleFirst" (toggled)="showMessage($event)">
-  <toggle-button></toggle-button>
-  <toggle-on> Btn is on</toggle-on>
-  <toggle-off> is off</toggle-off>
-</div>
 
 

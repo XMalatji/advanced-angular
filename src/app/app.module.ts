@@ -3,10 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ToggleModule } from './toggle/toggle.module';
+import { SwitchComponent } from './switch/switch.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent, SwitchComponent
   ],
   imports: [
     BrowserModule, ToggleModule
