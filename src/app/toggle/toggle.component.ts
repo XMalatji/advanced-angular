@@ -3,7 +3,7 @@ import { Component, OnInit, Input, Output, EventEmitter, ContentChild, AfterCont
 @Component({
   exportAs: 'toggle',
   selector: 'toggle , [toggle]',
-  template: `<ng-container *ngTemplateOutlet="layoutTemp; context: { on: this.on, toggle: this.toggle }"></ng-container>`
+  template: `<ng-container *ngTemplateOutlet="layoutTemp; context: { on: on, fns: {toggle: toggle} }"></ng-container>`
 })
 export class ToggleComponent implements OnInit {
 
