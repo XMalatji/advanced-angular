@@ -1,7 +1,11 @@
 <toggle>
  <ng-template let-on="on" let-fns="fns">
-  <switch [on]="on" (click)="fns.toggle()"></switch>
-  {{ on ? 'On' : 'Off'}}
+  <switch toggler [on]="on" (click)="fns.toggle()"></switch>
+
+ <button toggler [on]="on" (click)="fns.toggle()"> 
+    {{ on ? 'On' : 'Off'}}
+ </button>
+
  </ng-template>
 </toggle>
 
